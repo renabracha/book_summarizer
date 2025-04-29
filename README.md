@@ -17,7 +17,7 @@ The application follows the sequence below:
 * The barcode scannner is an app on my Android phone. The flow can be streamlined by connecting the phone or an external scanning device to the computer to pass scanned barcodes to the program. 
 * It was fun to experiment with the book synopsis generating prompt to see how the tone changes from a moderate book promoter to an over-enthusiastic book seller and somewhere in between. 
 
-# Installation
+## Installation
 To run book_summarizer.py, do the following:
 
 ### Step 1. Place the files in a folder. 
