@@ -16,6 +16,7 @@ The application follows the sequence below:
 ## Development Notes
 * The barcode scannner is an app on my Android phone. The flow can be streamlined by connecting the phone or an external scanning device to the computer to pass scanned barcodes to the program. 
 * It was fun to experiment with the book synopsis generating prompt to see how the tone changes from a moderate book promoter to an over-enthusiastic book seller and somewhere in between. 
+* I like prototyping a program in Jupyter Notebook on Google Colab because I can check cell by cell that the code is working as I progress, and have access to T4 GPU. After completing the code in a .ipynb file, I then converted it to a .py file so the program can run standalone. I learned the different ways in accessing the API keys with security considerations. I used Streamlit to create a web app interface that allows users to interact with the program.
 
 ## Installation
 To run book_summarizer.py, do the following:
