@@ -7,13 +7,15 @@ I would like to thank the following individuals and organisations that made this
 
 ## Abstract
 Recently discovering a barcode scanner app on my Android phone led to this little project that makes use of scanned ISBN's and prompt engineering techniques. Among the basic information about the book, the main feature is the prentation of the synopsis. The length of the synopsis can be adjusted to the user's preference in terms of number of words. All the information is presented in a simple Web app interface. 
-<br>
-Langchain provides a structure to the code, enhancing readability with the sequencing of modular prompt templates. 
-<br>
+<br><br>
 The application follows the sequence below:
 1. Ask for an ISBN.
 2. Get the book information from Google Books.  
 3. Summarize the storyline in 300 words.
+
+## Development Notes
+* The barcode scannner is an app on my Android phone. The flow can be streamlined by connecting the phone or an external scanning device to the computer to pass scanned barcodes to the program. 
+* It was fun to experiment with the book synopsis generating prompt to see how the tone changes from a moderate book promoter to an over-enthusiastic book seller and somewhere in between. 
 
 # Installation
 To run book_summarizer.py, do the following:
