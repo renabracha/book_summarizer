@@ -6,17 +6,21 @@ I would like to thank the following individuals and organisations that made this
 * Google Books for enabling me to perform full-text searches on book content on the Web using their free API.
 
 ## Abstract
-Recently discovering a barcode scanner app on my Android phone led to this little project that makes use of scanned ISBN's and prompt engineering techniques. Among the basic information about the book, the main feature is the prentation of the synopsis. The length of the synopsis can be adjusted to the user's preference in terms of number of words. All the information is presented in a simple Web app interface. 
-<br><br>
-The application follows the sequence below:
-1. Ask for an ISBN.
-2. Get the book information from Google Books.  
-3. Summarize the storyline in 300 words.
+This project was inspired by discovering a barcode scanner app on my Android phone. It uses scanned ISBNs and prompt engineering techniques to retrieve and summarize book information. The key feature is a 300-word synopsis, written in an engaging tone to spark the reader’s interest in the book. All information is displayed in a clean, user-friendly web app interface.
+
+<br>
+
+The application follows this sequence:
+1. Prompt the user to enter an ISBN.
+2. Retrieve book information using the Google Books API.
+3. Generate a synopsis of the book.
 
 ## Development Notes
-* The barcode scannner is an app on my Android phone. The flow can be streamlined by connecting the phone or an external scanning device to the computer to pass scanned barcodes to the program. 
-* It was fun to experiment with the book synopsis generating prompt to see how the tone changes from a moderate book promoter to an over-enthusiastic book seller and somewhere in between. 
-* I like prototyping a program in Jupyter Notebook on Google Colab because I can check cell by cell that the code is working as I progress, and have access to T4 GPU. After completing the code in a .ipynb file, I then converted it to a .py file so the program can run standalone. I learned the different ways in accessing the API keys with security considerations. I used Streamlit to create a web app interface that allows users to interact with the program.
+* The barcode scanner used is a mobile app on my Android device. A future improvement could involve connecting the phone or an external scanner to automatically feed ISBNs into the application.
+* It was engaging to experiment with the synopsis generation prompt — adjusting its tone to sound anywhere between a neutral book blurb and an enthusiastic sales pitch.
+* I developed and tested the prototype in a Jupyter Notebook on Google Colab, taking advantage of GPU support (T4). This made it easy to debug the code step-by-step.
+* After completing the notebook version, I converted the code into a `.py` script so the program could run independently.
+* I explored multiple secure methods of accessing API keys and used **Streamlit** to build a simple web interface that allows users to interact with the tool easily.
 
 ## Installation
 To run book_summarizer.py, do the following:
